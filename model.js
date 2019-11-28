@@ -9,11 +9,11 @@ let userSchema = mongoose.Schema({
             required : true }
 });
 
-let User = mongoose.model('User', userSchema);
+let UserDB = mongoose.model('UserDB', userSchema);
 
 let UserList = {
     get : function(){
-        return User.find()
+        return UserDB.find()
                 .then(users => {
                     return users;
                 })
@@ -23,7 +23,7 @@ let UserList = {
 
     },
     post :  function(newUser){
-        return User.create(newUser) //insert in terminal bun mongoose is create
+        return UserDB.create(newUser) //insert in terminal bun mongoose is create
             .then(user => {
                 return user;
             })
