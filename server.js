@@ -54,7 +54,7 @@ app.get("/api/getAll", (req, res) => {
 })
 
 app.post( "/api/postUser", jsonParser, ( req, res, next ) => {
-    let user =req.body.user;
+    let newUser = req.body.user;
 	UserList.post(newUser)
 		.then( user => {
 			return res.status( 201 ).json({

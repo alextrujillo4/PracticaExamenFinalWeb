@@ -61,7 +61,7 @@ function addUser(name, age, gender){
                 console.log(responseJSON.status);
                 displayData(responseJSON.data);
             }else{
-                console.log("Conexión Error");
+                console.log("Conexión else Error");
             }
         },
         error: function(err) {
@@ -98,7 +98,7 @@ function verifyUser(){
     });
 
 }
-
+/*
 function deleteUser(id,event){
     console.log("deleteUser()")
     $.ajax({
@@ -124,10 +124,9 @@ $(".list").on("click", ".element", event => {
     event.preventDefault();
     let id =  $(event.target).parent().attr("id");
     deleteUser(id,event);
-})
+})*/
 
 
 verifyUser();
-
 deleteUser();
 getAllUsers();
