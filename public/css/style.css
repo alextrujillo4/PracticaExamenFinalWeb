@@ -1,0 +1,81 @@
+body, section, p{
+font-family: 'Quicksand', sans-serif;
+}
+p{
+    margin: 0;
+    padding: 0;
+    size: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer, h1, h2, h3, h4, h5{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Pacifico', cursive;
+}
+header{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #333;
+    size:16px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    padding: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 24px;
+}
+
+.listsection{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: aliceblue;
+
+}
+.formsection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.element{
+    margin: 24px;
+    background: white;
+}
+
+footer{
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    padding: 8px;
+    color: #333;
+    size:16px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: coral;
+
+}

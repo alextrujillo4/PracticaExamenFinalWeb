@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Register Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Register Form</h1>
+            <p>Please add a user</p>
+        </header>
+        <section>
+                <div class="formsection">
+                        <form class="form">
+                            <legend>Form to add users</legend>
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" value=""/>
+                            </div>
+                            <div>
+                                <label for="age">Age</label>
+                                <input type="number" id="age" value=""/>
+                            </div>
+
+                            <div>
+                                <p>User Gender:</p>
+                                <select id="gender">
+                                    <option value="F">F</option>
+                                    <option value="M">M</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <button id="submitBtn">Add User</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="listsection">
+                        <h3> List of Users:</h4>
+                        <ul id="userList" class="list">
+                        </ul>
+                    </div>
+        </section>
+        <footer>
+            <p>This page was made with love! :D</p>
+        </footer>
+        <script src="./js/index.js"></script>
+    
+    </body>
+    
+</html>
