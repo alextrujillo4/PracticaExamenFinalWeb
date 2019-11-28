@@ -39,7 +39,7 @@ function getAllUsers(){
     });
 }
 
-
+/*
 function addUser(name, age, gender){
     console.log("addUser()")
     $.ajax({
@@ -128,5 +128,6 @@ $(".list").on("click", ".element", event => {
 
 
 verifyUser();
+
+deleteUser();*/
 getAllUsers();
-deleteUser();

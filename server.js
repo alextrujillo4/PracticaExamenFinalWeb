@@ -11,10 +11,6 @@ let app = express();
 let jsonParser = bodyParser.json();
 mongoose.Promise = global.Promise;
 
-app.use(express.static("public"));
-app.use(morgan( "dev" ) );
-
-
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Content-Type,Authorization");
@@ -24,6 +20,10 @@ app.use(function(req, res, next) {
     }
     next();
   });
+
+
+app.use(express.static("public"));
+app.use(morgan( "dev" ) );
 
 //=================================
 //---------------CODE--------------
@@ -161,6 +161,7 @@ runServer( PORT, DATABASE_URL )
 	.catch( err => {
 		console.log( err );
 	});
+
 module.exports = { app, runServer, closeServer };
 
 
