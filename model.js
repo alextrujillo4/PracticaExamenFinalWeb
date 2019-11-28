@@ -9,7 +9,7 @@ let userSchema = mongoose.Schema({
             required : true }
 });
 
-let UserDB = mongoose.model('UserDB', userSchema);
+let UserDB = mongoose.model('User', userSchema);
 
 let UserList = {
     get : function(){

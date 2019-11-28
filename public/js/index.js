@@ -24,6 +24,7 @@ function getAllUsers(){
         url: "/api/getAll",
         method: "GET",
         dataType: "json",
+        contentType: "application/json",
         success: responseJSON => {
             console.log("Conexión Exitosa");
             if (responseJSON.status === 200){
