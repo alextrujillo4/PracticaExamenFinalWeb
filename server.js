@@ -53,6 +53,26 @@ app.get("/api/getAll", (req, res) => {
 		});
 })
 
+app.post( "/api/postUser", jsonParser, ( req, res, next ) => {
+    let user =req.body.user;
+	UserList.post(newUser)
+		.then( user => {
+			return res.status( 201 ).json({
+				message : "user added to the list",
+				status : 201,
+				user : user
+			});
+		})
+		.catch( error => {
+			res.statusMessage = "Something went wrong with the DB. Try again later.";
+			return res.status( 500 ).json({
+				status : 500,
+				message : "Something went wrong with the DB. Try again later."
+			});
+		});
+
+});
+
 
 //=================================
 //---------------CODE--------------

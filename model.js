@@ -22,14 +22,14 @@ let UserList = {
                 });
 
     },
-    post :  function(newUser){
-        return UserDB.create(newUser) //insert in terminal bun mongoose is create
-            .then(user => {
-                return user;
-            })
-            .catch(err => {
-                throw Error(err);
-            });
+    post : function( newUser ){
+		return UserDB.create( newUser )
+				.then( user => {
+					return user;
+				})
+				.catch( error => {
+					throw Error(error);
+				});
     }
 }
 
