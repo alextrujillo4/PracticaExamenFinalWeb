@@ -128,5 +128,5 @@ $(".list").on("click", ".element", event => {
 
 
 verifyUser();
-deleteUser();
+//deleteUser();
 getAllUsers();

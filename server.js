@@ -64,7 +64,7 @@ app.post( "/api/postUser", jsonParser, ( req, res, next ) => {
 			});
 		})
 		.catch( error => {
-			res.statusMessage = "Something went wrong with the DB. Try again later.";
+			res.statusMessage = `Something went wrong with the User: ${newUser.name}. Try again later.`;
 			return res.status( 500 ).json({
 				status : 500,
 				message : "Something went wrong with the DB. Try again later."
